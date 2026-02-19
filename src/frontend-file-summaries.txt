@@ -1,0 +1,13 @@
+{
+  "frontend/src/App.tsx": "Main application component that manages authentication state and conditionally renders either the PasswordGate or the authenticated Layout with AnswerList and DeveloperProfile components.",
+  "frontend/src/components/Layout.tsx": "Layout wrapper component with \"Bittu Kadai\" branding, black and white gradient background with grayscale decorative blur effects, and minimal header design.",
+  "frontend/src/components/PasswordGate.tsx": "Password authentication component with black and white styling, validates password \"wommala\", enforces 3-attempt limit with 5-minute lockout and countdown timer.",
+  "frontend/src/components/AnswerCard.tsx": "Reusable card component displaying code experiments with proper monospace formatting in a pre tag, copy and share buttons with black/white styling, and preserved whitespace for copyable code.",
+  "frontend/src/components/AnswerList.tsx": "Container component rendering two C++ code experiment cards with minimal titles (\"1st - Experiment\", \"2nd - Experiment\") and properly formatted, indented code content.",
+  "frontend/src/components/DeveloperProfile.tsx": "Developer profile section displaying JoshNvrDie's information with grayscale gradient styling for card, avatar, and Instagram link button.",
+  "frontend/src/hooks/usePasswordAttempts.ts": "Custom React hook managing password attempt tracking, lockout state, countdown timer, and localStorage persistence for security enforcement.",
+  "frontend/src/hooks/useQueries.ts": "Placeholder file for React Query hooks; currently empty as all functionality is client-side with no backend queries needed.",
+  "frontend/src/index.css": "Global styles with monochromatic black and white color palette using OKLCH color system, supporting both light and dark modes with grayscale tokens for all UI elements.",
+  "frontend/tailwind.config.js": "Tailwind configuration with black and white color theme featuring grayscale tokens (gray-50 through gray-900) and monospace font family for code display.",
+  "frontend/index.html": "HTML entry point with updated page title \"Bittu Kadai\" replacing \"Answer Vault\"."
+}

@@ -1,0 +1,209 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 7,
+  "summary": "A password-protected website named 'Bittu Kadai' with sleek UI that displays C++ programming experiments with copy/share buttons. Features a 3-attempt login system with 5-minute timeout, developer profile section for JoshNvrDie with Instagram link, and focuses on responsive, user-friendly design with updated color scheme.",
+  "architectural_notes": [
+    "Client-side password validation for fast access",
+    "LocalStorage for tracking login attempts and timeout",
+    "Responsive design with mobile-first approach",
+    "Code snippets displayed with syntax highlighting for readability",
+    "Developer profile includes profile picture display capability"
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-implement-password-protection-gate-requiring-the-password-wommala-to-access-the-main-website-content",
+      "title": "Implement password protection gate requiring the password 'wommala' to access the main website content",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-enforce-a-maximum-of-3-password-attempts-with-a-5-minute-lockout-period-after-failed-attempts",
+      "title": "Enforce a maximum of 3 password attempts with a 5-minute lockout period after failed attempts",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-display-a-collection-of-answers-with-individual-labeled-buttons-for-copy-and-share-functionality",
+      "title": "Display a collection of answers with individual labeled buttons for copy and share functionality",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-developer-profile-section-displaying-name-and-instagram-profile-link",
+      "title": "Create a developer profile section displaying name and Instagram profile link",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-sleek-modern-and-user-friendly-design-system-with-a-cohesive-visual-theme-that-avoids-generic-ai-style-aesthetics-using-warm-earth-tones-with-coral-accents-clean-geometric-shapes-and-subtle-animations-for-a-professional-yet-approachable-feel",
+      "title": "Implement a sleek, modern, and user-friendly design system with a cohesive visual theme that avoids generic AI-style aesthetics, using warm earth tones with coral accents, clean geometric shapes, and subtle animations for a professional yet approachable feel",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-ensure-the-website-is-fully-responsive-and-performs-well-across-all-device-sizes",
+      "title": "Ensure the website is fully responsive and performs well across all device sizes",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-change-the-website-title-and-branding-from-answer-vault-to-bittu-kadai-across-all-ui-elements-including-the-header-page-title-and-any-references",
+      "title": "Change the website title and branding from 'Answer Vault' to 'Bittu Kadai' across all UI elements including the header, page title, and any references",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-developer-profile-section-to-display-the-name-joshnvrdie-include-the-instagram-profile-url-https-www-instagram-com-joshnvrdie-igsh-mwzjcnf0emk4axjina-and-display-the-generated-profile-picture-as-the-avatar",
+      "title": "Update the developer profile section to display the name 'JoshNvrDie', include the Instagram profile URL https://www.instagram.com/joshnvrdie?igsh=MWZjcnF0emk4aXJiNA==, and display the generated profile picture as the avatar",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-replace-all-existing-answer-entries-with-exactly-two-new-answers-containing-the-provided-c-code-experiments-the-first-answer-titled-1st-experiment-containing-the-salary-calculation-program-and-the-second-answer-titled-2nd-experiment-containing-the-grade-percentage-evaluation-program",
+      "title": "Replace all existing answer entries with exactly two new answers containing the provided C++ code experiments: the first answer titled '1st - Experiment' containing the salary calculation program, and the second answer titled '2nd - Experiment' containing the grade percentage evaluation program",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-remove-the-footer-section-that-contains-made-with-love-by-and-any-developer-credits-or-attribution-text",
+      "title": "Remove the footer section that contains 'made with love by' and any developer credits or attribution text",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-ui-color-scheme-from-the-current-warm-earth-tones-sand-terracotta-coral-to-a-new-color-palette-that-provides-visual-distinction-while-maintaining-modern-aesthetics-and-good-contrast",
+      "title": "Update the UI color scheme from the current warm earth tones (sand, terracotta, coral) to a new color palette that provides visual distinction while maintaining modern aesthetics and good contrast",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-render-the-generated-profile-picture-josh-profile-dim-200x200-png-as-a-static-asset-in-frontend-public-assets-generated-and-reference-it-in-the-developer-profile-component",
+      "title": "Render the generated profile picture (josh-profile.dim_200x200.png) as a static asset in frontend/public/assets/generated and reference it in the developer profile component",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-entire-ui-color-scheme-to-a-black-and-white-palette-replacing-the-current-color-system-with-a-monochromatic-theme-using-shades-of-black-white-and-gray-while-maintaining-good-contrast-and-readability",
+      "title": "Update the entire UI color scheme to a black and white palette, replacing the current color system with a monochromatic theme using shades of black, white, and gray while maintaining good contrast and readability",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-improve-the-code-formatting-and-alignment-within-the-c-experiment-displays-to-ensure-proper-indentation-consistent-spacing-and-clean-presentation-of-the-code-blocks",
+      "title": "Improve the code formatting and alignment within the C++ experiment displays to ensure proper indentation, consistent spacing, and clean presentation of the code blocks",
+      "reqIds": [
+        "REQ-14"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-ensure-the-code-experiments-are-fully-copyable-by-implementing-proper-text-selection-and-copy-functionality-that-preserves-code-formatting-and-indentation-when-copied-to-clipboard",
+      "title": "Ensure the code experiments are fully copyable by implementing proper text selection and copy functionality that preserves code formatting and indentation when copied to clipboard",
+      "reqIds": [
+        "REQ-15"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-reduce-or-remove-excessive-descriptive-text-labels-or-commentary-around-the-code-experiments-keeping-only-essential-identifiers-like-the-experiment-titles",
+      "title": "Reduce or remove excessive descriptive text, labels, or commentary around the code experiments, keeping only essential identifiers like the experiment titles",
+      "reqIds": [
+        "REQ-16"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Password protection with 'wommala' as password, 3 attempts max, 5-minute timeout on failure",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Display answers with labeled copy and share buttons",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Developer section with name and Instagram profile link",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Sleek, modern UI design that is responsive and user-friendly",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Update developer bio to display 'JoshNvrDie' with Instagram profile link and profile picture",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-7",
+      "summary": "Remove 'made with love by' footer credits section",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-8",
+      "summary": "Add two C++ code experiments as answers: 1st - Salary calculation, 2nd - Grade percentage evaluation",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-9",
+      "summary": "Change color theme to black and white palette",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-10",
+      "summary": "Arrange and align code experiments correctly with proper formatting and ensure they are copyable",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-11",
+      "summary": "Reduce or remove unnecessary descriptive text around the experiments",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "projectName": "Bittu Kadai",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

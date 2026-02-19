@@ -1,0 +1,101 @@
+{
+  "kind": "build_request",
+  "title": "Update color theme to black and white and improve code experiment formatting",
+  "projectName": "Bittu Kadai",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-13",
+      "text": "Update the entire UI color scheme to a black and white palette, replacing the current color system with a monochromatic theme using shades of black, white, and gray while maintaining good contrast and readability",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-latest"
+        ],
+        "quotes": [
+          "Change the colour theme to black and white maybe look good"
+        ]
+      },
+      "acceptanceCriteria": [
+        "All UI elements use only black, white, and grayscale colors",
+        "Text remains readable with sufficient contrast ratios",
+        "Interactive elements have clear hover and active states using grayscale variants",
+        "Background gradients and decorative elements use only black/white/gray tones"
+      ]
+    },
+    {
+      "id": "REQ-14",
+      "text": "Improve the code formatting and alignment within the C++ experiment displays to ensure proper indentation, consistent spacing, and clean presentation of the code blocks",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-latest"
+        ],
+        "quotes": [
+          "arrange the given code correctly",
+          "align the cod3s perfectly in that webpage"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Code blocks display with proper monospace font",
+        "Indentation is preserved and visually consistent",
+        "Code is properly aligned within the card boundaries",
+        "Syntax structure is clearly visible and readable"
+      ]
+    },
+    {
+      "id": "REQ-15",
+      "text": "Ensure the code experiments are fully copyable by implementing proper text selection and copy functionality that preserves code formatting and indentation when copied to clipboard",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-latest"
+        ],
+        "quotes": [
+          "copy able"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Users can select text within code blocks",
+        "Copy button preserves original code formatting including whitespace and indentation",
+        "Manual text selection and copy (Ctrl+C) works correctly",
+        "Copied code can be pasted into code editors with formatting intact"
+      ]
+    },
+    {
+      "id": "REQ-16",
+      "text": "Reduce or remove excessive descriptive text, labels, or commentary around the code experiments, keeping only essential identifiers like the experiment titles",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-latest"
+        ],
+        "quotes": [
+          "dont mention to much stuffs from your side"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Only experiment titles ('1st - Experiment', '2nd - Experiment') are shown as headers",
+        "No additional descriptive text or explanations appear around the code",
+        "Code content is the primary focus of each card",
+        "UI remains clean and minimal"
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not modify the password gate functionality or authentication logic",
+    "Preserve the existing developer profile section and its content",
+    "Maintain the responsive design and mobile compatibility",
+    "Keep the 'Bittu Kadai' branding and header unchanged"
+  ],
+  "nonGoals": [
+    "Adding new code experiments beyond the existing two",
+    "Modifying the password or lockout mechanism",
+    "Changing the developer profile information or Instagram link",
+    "Adding syntax highlighting or code editor features"
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

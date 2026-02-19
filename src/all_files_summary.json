@@ -1,0 +1,21 @@
+{
+  "backend/main.mo": "Empty Motoko actor file serving as the backend entry point with no implemented functionality.",
+  "feature_evidence.json": "Feature evidence report documenting four completed features: black/white UI color scheme, C++ code formatting improvements, copyable code functionality, and reduced descriptive text around experiments.",
+  "frontend-file-summaries.txt": "JSON-formatted summaries of all frontend source files describing their purpose and key functionality in the application.",
+  "frontend/index.css": "Tailwind CSS configuration with monochromatic OKLCH color system defining grayscale design tokens for light and dark modes.",
+  "frontend/index.html": "HTML entry point with page title 'Bittu Kadai' and root div for React application mounting.",
+  "frontend/src/App.tsx": "Root React component managing authentication state, conditionally rendering PasswordGate or authenticated Layout with AnswerList and DeveloperProfile.",
+  "frontend/src/components/AnswerCard.tsx": "Card component displaying code experiments with monospace formatting, copy-to-clipboard functionality, and share buttons using black/white styling.",
+  "frontend/src/components/AnswerList.tsx": "Container component rendering two C++ code experiment cards with minimal titles and properly formatted code content.",
+  "frontend/src/components/DeveloperProfile.tsx": "Profile card displaying developer JoshNvrDie's information with avatar, description, and Instagram link in grayscale styling.",
+  "frontend/src/components/Layout.tsx": "Layout wrapper with 'Bittu Kadai' header, black/white gradient background, and decorative grayscale blur effects.",
+  "frontend/src/components/PasswordGate.tsx": "Authentication component validating password 'wommala' with 3-attempt limit, 5-minute lockout, countdown timer, and black/white styling.",
+  "frontend/src/hooks/useActor.ts": "React hook that manages backend actor creation with Internet Identity authentication, automatically invalidating and refetching dependent queries when the actor changes.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Provides Internet Identity authentication context and hooks for login/logout functionality, managing identity state and AuthClient lifecycle with configurable options.",
+  "frontend/src/hooks/usePasswordAttempts.ts": "Custom hook managing password attempt tracking with a 3-attempt limit and 5-minute lockout period, persisting state to localStorage with countdown timer.",
+  "frontend/src/hooks/useQueries.ts": "Empty placeholder file for React Query backend interaction hooks; currently all functionality is client-side only.",
+  "frontend/src/index.css": "Tailwind CSS configuration with custom black-and-white monochromatic color palette using OKLCH color space, supporting both light and dark modes with grayscale tokens.",
+  "frontend/src/main.tsx": "Application entry point that sets up React root with QueryClient and InternetIdentityProvider wrappers around the main App component.",
+  "frontend/tailwind.config.js": "Tailwind configuration extending the theme with custom OKLCH-based color system, container settings, border radius variables, and typography/animation plugins.",
+  "project_state.json": "Project metadata describing 'Bittu Kadai' - a password-protected C++ programming experiments showcase with 3-attempt login, developer profile for JoshNvrDie, and responsive design requirements."
+}

@@ -1,0 +1,110 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Update color theme to black and white and improve code experiment formatting",
+  "requirements": [
+    {
+      "id": "REQ-13",
+      "summary": "Update the entire UI color scheme to a black and white palette with monochromatic shades while maintaining good contrast and readability",
+      "acceptanceCriteria": [
+        "All UI elements use only black, white, and grayscale colors",
+        "Text remains readable with sufficient contrast ratios",
+        "Interactive elements have clear hover and active states using grayscale variants",
+        "Background gradients and decorative elements use only black/white/gray tones"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Replace the current OKLCH color system with a monochromatic black and white palette using CSS custom properties for background, foreground, card, primary, secondary, muted, accent, and destructive color variants with grayscale values ensuring sufficient contrast ratios"
+        },
+        {
+          "path": "frontend/tailwind.config.js",
+          "operation": "modify",
+          "description": "Update the Tailwind theme configuration to reference the new black and white CSS variables, removing any colored accent definitions and ensuring all color references use the monochromatic palette"
+        },
+        {
+          "path": "frontend/src/components/Layout.tsx",
+          "operation": "modify",
+          "description": "Replace the gradient background and decorative blur effects with black and white gradient variants using grayscale tones while maintaining the visual hierarchy and depth"
+        },
+        {
+          "path": "frontend/src/components/AnswerCard.tsx",
+          "operation": "modify",
+          "description": "Update card styling to use black, white, and gray colors for backgrounds, borders, hover states, and button elements while preserving the hover animations and interactive feedback"
+        },
+        {
+          "path": "frontend/src/components/DeveloperProfile.tsx",
+          "operation": "modify",
+          "description": "Replace the gradient styling with grayscale gradient effects and update all color references to use black, white, and gray variants for the card, avatar, and Instagram link"
+        },
+        {
+          "path": "frontend/src/components/PasswordGate.tsx",
+          "operation": "modify",
+          "description": "Update input fields, buttons, error messages, and countdown timer styling to use the monochromatic color scheme with clear visual feedback using grayscale variants for different states"
+        }
+      ]
+    },
+    {
+      "id": "REQ-14",
+      "summary": "Improve code formatting and alignment within C++ experiment displays with proper indentation, spacing, and clean presentation",
+      "acceptanceCriteria": [
+        "Code blocks display with proper monospace font",
+        "Indentation is preserved and visually consistent",
+        "Code is properly aligned within the card boundaries",
+        "Syntax structure is clearly visible and readable"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/AnswerList.tsx",
+          "operation": "modify",
+          "description": "Format the hardcoded C++ code strings with proper indentation and spacing, ensuring consistent tab/space usage and preserving the code structure for both salary calculation and grade evaluation experiments"
+        },
+        {
+          "path": "frontend/src/components/AnswerCard.tsx",
+          "operation": "modify",
+          "description": "Update the content rendering to use a monospace font family, preserve whitespace with CSS white-space property, and ensure proper text wrapping and overflow handling for code blocks within card boundaries"
+        }
+      ]
+    },
+    {
+      "id": "REQ-15",
+      "summary": "Ensure code experiments are fully copyable with proper text selection and copy functionality that preserves formatting and indentation",
+      "acceptanceCriteria": [
+        "Users can select text within code blocks",
+        "Copy button preserves original code formatting including whitespace and indentation",
+        "Manual text selection and copy (Ctrl+C) works correctly",
+        "Copied code can be pasted into code editors with formatting intact"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/AnswerCard.tsx",
+          "operation": "modify",
+          "description": "Ensure the copy button functionality preserves all whitespace and indentation when copying to clipboard, and verify that the content area allows user text selection without CSS restrictions (remove user-select: none if present)"
+        }
+      ]
+    },
+    {
+      "id": "REQ-16",
+      "summary": "Reduce excessive descriptive text around code experiments, keeping only essential experiment titles",
+      "acceptanceCriteria": [
+        "Only experiment titles ('1st - Experiment', '2nd - Experiment') are shown as headers",
+        "No additional descriptive text or explanations appear around the code",
+        "Code content is the primary focus of each card",
+        "UI remains clean and minimal"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/AnswerList.tsx",
+          "operation": "modify",
+          "description": "Update the title prop for each AnswerCard to show only '1st - Experiment' and '2nd - Experiment' respectively, removing any additional descriptive text or explanations"
+        },
+        {
+          "path": "frontend/src/components/AnswerCard.tsx",
+          "operation": "modify",
+          "description": "Review and remove any additional labels, helper text, or commentary that may appear around the code content display, ensuring only the title and code block are rendered"
+        }
+      ]
+    }
+  ]
+}
